@@ -4,5 +4,5 @@ from .views import signInPageView
 
 urlpatterns = [
     path("", indexPageView, name ="index"),
-    path("signin/", signInPageView, name = "SignIn")
+    path("SignIn/signin.html", signInPageView, name = "SignIn")
 ]

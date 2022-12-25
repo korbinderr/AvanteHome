@@ -1,8 +1,8 @@
 from django.db import models
 
 # Create your models here.
-class HomeInfo(models.Model):
-    house_photo = models.ImageField(upload_to= 'photos')
+class HomeDeets(models.Model):
+    home_id = models.IntegerField(primary_key=True)
     price = models.IntegerField(default=0)
     square_ft = models.IntegerField(default=0)
     beds = models.IntegerField(default = 0)
@@ -14,6 +14,7 @@ class HomeInfo(models.Model):
     lot_size = models.IntegerField(default=0)
     year_built = models.IntegerField(default=0)
     days_listed = models.IntegerField(default=0)
+    c_test_field = models.IntegerField(default=0)
 
     def __str__(self):
         return (self.house_name)

@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'SignIn.apps.SigninConfig',
-    'homepages.apps.HomepagesConfig',
+    'homedeets.apps.HomedeetsConfig',
     
 ]
 
@@ -80,10 +80,11 @@ WSGI_APPLICATION = 'avantehome.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'avante',
+        'NAME': 'avantetwo',
         'USER': 'postgres',
-        'PASSWORD': 'Jacksonhole2020!',
-        'Host': 'localhost'
+        'PASSWORD': 'Clam1921!',
+        'HOST': '127.0.0.1',
+        'PORT' : '5432',
     }
 }
 
